@@ -72,7 +72,7 @@ python osu2simai.py song.osu -o out/ --tier utage --num 14.7 \
 | `advanced` | ADVANCED | 3 | 2 |
 | `expert` | EXPERT | 4 | 3 |
 | `master` | MASTER | 5 | 4 |
-| `re:master` | Re:MASTER | 6 | 5 |
+| `remaster` | Re:MASTER | 6 | 5 |
 | `utage` | 宴会场 | 7 | 6 |
 
 注意两处编号不同：maidata 槽位 `inote_<slot>`/`lv_<slot>` 用 **1..7**；
