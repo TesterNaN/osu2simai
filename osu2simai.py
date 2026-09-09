@@ -17,7 +17,7 @@ expected_notes.csv reference file.
 Every run must declare the chart tier and level explicitly:
 
   * --tier: exactly one of  easy, basic, advanced, expert, master,
-    re:master, utage  (case-sensitive, no aliases). The tier position is
+    remaster, utage  (case-sensitive, no aliases). The tier position is
     1-based for the maidata slot (inote_<slot>/lv_<slot>) and 0-based
     (easy=0 ... utage=6) for notes[].difficulty in the JSON export.
   * --num:  the level number, must be > 0 (e.g. 42 or 14.7).
@@ -69,7 +69,7 @@ TIER_ORDER = {
     "advanced": 3,
     "expert": 4,
     "master": 5,
-    "re:master": 6,
+    "remaster": 6,
     "utage": 7,
 }
 
@@ -390,7 +390,7 @@ def build_parser() -> argparse.ArgumentParser:
                    choices=list(TIER_ORDER),
                    help="difficulty tier (exact name, no aliases): "
                         "easy, basic, advanced, expert, master, "
-                        "re:master, utage; selects the maidata slot and "
+                        "remaster, utage; selects the maidata slot and "
                         "notes[].difficulty")
     p.add_argument("-n", "--num", required=True, type=num_type, metavar="NUMBER",
                    help="level number (must be > 0), used for lv_<slot> and "
